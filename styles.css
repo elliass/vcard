@@ -1,0 +1,137 @@
+body {
+    background-color: pink;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    height: 100vh; /* Ensure full viewport height */
+    position: relative; /* Ensure relative positioning for absolutely positioned children */
+    /* font-family: Open sans; */
+}
+
+header {
+    background-color: transparent;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header img {
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+}
+
+main {
+    display: flex; /* Use flexbox */
+    flex: 1; /* Take up remaining vertical space */
+    position: relative; /* Ensure positioning context for absolutely positioned children */
+}
+
+.first, .second {
+    height: 100%;
+}
+
+.first {
+    background-color: #4c00f7;
+    width: 50%; /* Equal width */
+}
+
+.second {
+    background-color: white;
+    width: 50%; /* Equal width */
+    padding-left: 300px;
+    padding-top: 250px;
+    height: calc(100vh - 260px);
+    
+}
+
+.portrait {
+    max-width:500px;
+    max-height:600px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    right: 0;
+    z-index: 1;
+}
+
+button {
+    border-radius: 30px;
+    padding: 20px 40px;
+    margin-top: 20px;
+    cursor: pointer; /* Add cursor pointer for better interaction */
+}
+
+.portfolio {
+    background-color: #4c00f7;
+    color: white;
+    border: none;
+    margin-right: 40px;
+}
+
+.portfolio:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.resume {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.resume:hover {
+    background-color: #4c00f7;
+    color: white;
+    border: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    right: 0;
+    z-index: 1;
+    color: white;
+    width: 50%;
+}
+
+dl {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+dt {
+    font-weight: bold; /* Optionally, make the terms bold */
+    padding-bottom: 10px;
+}
+
+dd {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    padding-bottom: 30px;
+}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex;
+}
+
+li {
+    padding-right: 20px;
+}
+
+ul li a i {
+    font-size: 24px; /* Adjust the size of the icons as needed */
+    color: white;
+}
+
